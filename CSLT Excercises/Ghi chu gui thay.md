@@ -1,1 +1,0 @@
-Thầy ơi, em chỉnh sửa lại giao diện bài làm github của em, em lỡ tay xoá mất bài nộp cũ nên phải tạo link mới để nộp bài cho hoàn chỉnh, nên LMS hiển thị em nộp trễ bài 8 ngày. Chứ hong phải do em làm bài trễ và nộp trễ đâu nha thầy ơi. Mong thầy thông cảm giúp em và đừng trừ điểm em vì nộp bài trễ nha thầy
