@@ -17,12 +17,21 @@ namespace CSLT_Excercises.session6
         static void phatsinh_mang(int[] a, int n)
         {
             Random rnd = new Random();
-            for (int i = 0;i < n; i++)
-                a[i]= rnd.Next(1, 100);
+            for (int i = 0; i < n; i++)
+                a[i] = rnd.Next(1, 100);
+        }
+        static void nhap_mang(int[] a, int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write($"Nhap phan tu thu {i}: ");
+                int nhap = int.Parse(Console.ReadLine());
+                a[i] = nhap;
+            }    
         }
         public static void Main(string[] args)
         {
-            Console.Write("Nhap so phan tu mang: ");
+            /*Console.Write("Nhap so phan tu mang: ");
             int n = int.Parse(Console.ReadLine());
             int[] a = new int[n];
             phatsinh_mang(a, n);
@@ -66,6 +75,24 @@ namespace CSLT_Excercises.session6
             int h = int.Parse(Console.ReadLine());
             int[] j = removedup(z,h);
             Console.WriteLine($"Mang sau khi xoa la: {string.Join(", ",removedup(z,h))}");
+            //9. Requests 10 integers from the user and orders them by implementing the bubble sort algorithm.
+            Console.Write("Nhap so phan tu mang: ");
+            int soluong = int.Parse(Console.ReadLine());
+            int[] z = new int[soluong];
+            nhap_mang(z, soluong);
+            In_mang(z, soluong);
+            sapxep(z);*/
+            //10. Request a sentence from the user, then ask to enter a word. Search if the word appears in the phrase using the linear search algorithm.
+            Console.WriteLine("Nhap cau bat ki: ");
+            string cau = Console.ReadLine();
+            Console.WriteLine("Nhap tu bat ki: ");
+            string tu = Console.ReadLine();
+            if (TimKiemBangCachGomTu(cau, tu))
+            {
+                Console.WriteLine($"Co tu {tu} trong cau");
+            }    
+            else
+                Console.WriteLine($"Khong co tu {tu} trong cau");
         }
         //Bai1
         static double avr(int[] arr)
@@ -183,8 +210,65 @@ namespace CSLT_Excercises.session6
                     }    
                 }    
                 return b;
-            } 
-               
+            }  
+        }
+        //Bai9. 
+        static void sapxep(int[] a)
+        {
+            for (int i = 0; i < a.Length - 1; i++)
+                for (int j = 0; j < a.Length - i - 1; j++)
+                    if (a[j] > a[j + 1])
+                    {
+                        int t = a[j + 1];
+                        a[j + 1] = a[j];
+                        a[j] = t;
+                    }
+            for (int k = 0; k < a.Length; k++)
+                Console.Write(a[k] + " ");
+            Console.WriteLine();
+        }
+        //Bai10.
+        static bool TimKiemBangCachGomTu(string cau, string tuCanTim)
+        {
+            string tuHienTai = "";
+            for (int i = 0; i <= cau.Length; i++)
+            {
+                if (i < cau.Length && !LaDauCauHoacKhoangTrang(cau[i]))
+                {
+                    tuHienTai += ToLower(cau[i]);
+                }
+                else
+                {
+                    if (tuHienTai != "")
+                    {
+                        if (tuHienTai == ChuyenChuThuong(tuCanTim))
+                        {
+                            return true;
+                        }
+                        tuHienTai = "";
+                    }
+                }
+            }
+
+            return false;
+        }
+        static bool LaDauCauHoacKhoangTrang(char ch)
+        {
+            return ch == ' ' || ch == '.' || ch == ',' || ch == '!' || ch == '?' || ch == '\t';
+        }
+        static char ToLower(char ch)
+        {
+            if (ch >= 'A' && ch <= 'Z') return (char)(ch + 32);
+            return ch;
+        }
+        static string ChuyenChuThuong(string s)
+        {
+            string ketQua = "";
+            for (int i = 0; i < s.Length; i++)
+            {
+                ketQua += ToLower(s[i]);
+            }
+            return ketQua;
         }
     }
 }

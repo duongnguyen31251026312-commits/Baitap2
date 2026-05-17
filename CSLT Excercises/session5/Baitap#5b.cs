@@ -34,7 +34,7 @@
                 Console.Write($"{c} la so chan");
             else
                 Console.Write($"{c} la so le");
-            Console.WriteLine()
+            Console.WriteLine();
             //3. Tìm số lớn nhất trong ba số
             Console.Write("Nhap so dau tien: ");
             int one = int.Parse(Console.ReadLine());
