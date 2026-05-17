@@ -31,7 +31,7 @@ namespace CSLT_Excercises.session6
         }
         public static void Main(string[] args)
         {
-            /*Console.Write("Nhap so phan tu mang: ");
+            Console.Write("Nhap so phan tu mang: ");
             int n = int.Parse(Console.ReadLine());
             int[] a = new int[n];
             phatsinh_mang(a, n);
@@ -81,7 +81,7 @@ namespace CSLT_Excercises.session6
             int[] z = new int[soluong];
             nhap_mang(z, soluong);
             In_mang(z, soluong);
-            sapxep(z);*/
+            sapxep(z);
             //10. Request a sentence from the user, then ask to enter a word. Search if the word appears in the phrase using the linear search algorithm.
             Console.WriteLine("Nhap cau bat ki: ");
             string cau = Console.ReadLine();
