@@ -78,10 +78,10 @@ namespace CSLT_Excercises.session6
             //9. Requests 10 integers from the user and orders them by implementing the bubble sort algorithm.
             Console.Write("Nhap so phan tu mang: ");
             int soluong = int.Parse(Console.ReadLine());
-            int[] z = new int[soluong];
-            nhap_mang(z, soluong);
-            In_mang(z, soluong);
-            sapxep(z);
+            int[] x = new int[soluong];
+            nhap_mang(x, soluong);
+            In_mang(x, soluong);
+            sapxep(x);
             //10. Request a sentence from the user, then ask to enter a word. Search if the word appears in the phrase using the linear search algorithm.
             Console.WriteLine("Nhap cau bat ki: ");
             string cau = Console.ReadLine();
