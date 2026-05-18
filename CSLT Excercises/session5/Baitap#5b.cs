@@ -198,12 +198,12 @@
             int a = 0;
             int b = 1;
             if (n == 1)
-                Console.WriteLine(a);
+                Console.WriteLine($"Day Fibonacci: {a}");
             else if (n == 2)
-                Console.WriteLine(b);
+                Console.WriteLine($"Day Fibonacci: {a} {b}");
             else
             {
-                Console.Write($"Dãy Fibonacci: {a} {b} ");
+                Console.Write($"Day Fibonacci: {a} {b} ");
                 for (int i = 3; i <= n; i++)
                 {
                     int c = a + b;

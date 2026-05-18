@@ -31,7 +31,7 @@ namespace CSLT_Excercises.session6
         }
         public static void Main(string[] args)
         {
-            Console.Write("Nhap so phan tu mang: ");
+           /* Console.Write("Nhap so phan tu mang: ");
             int n = int.Parse(Console.ReadLine());
             int[] a = new int[n];
             phatsinh_mang(a, n);
@@ -74,7 +74,7 @@ namespace CSLT_Excercises.session6
             Console.Write("Nhap so can xoa: ");
             int h = int.Parse(Console.ReadLine());
             int[] j = removedup(z,h);
-            Console.WriteLine($"Mang sau khi xoa la: {string.Join(", ",removedup(z,h))}");
+            Console.WriteLine($"Mang sau khi xoa la: {string.Join(", ",removedup(z,h))}");*/
             //9. Requests 10 integers from the user and orders them by implementing the bubble sort algorithm.
             Console.Write("Nhap so phan tu mang: ");
             int soluong = int.Parse(Console.ReadLine());
