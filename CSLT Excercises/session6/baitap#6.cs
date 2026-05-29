@@ -36,63 +36,63 @@ namespace CSLT_Excercises.session6
             int[] a = new int[n];
             phatsinh_mang(a, n);
             In_mang(a, n);
-            //1. to calculate the average value of array elements.
-            double tb = avr(a);
-            Console.WriteLine($"Trung binh cong cua cac so la: {tb}");
-            //2. to test if an array contains a specific value.
-            Console.Write("Nhap gia tri cu the: ");
-            int t=int.Parse(Console.ReadLine());
-            if (test(a, t))
-                Console.WriteLine($"Mang co chua gia tri {t}");
-            else
-                Console.WriteLine($"Mang khong chua gia tri {t}");
-            //3.to find the index of an array element.
-            Console.Write("Nhap gia tri cu the: ");
-            int b = int.Parse(Console.ReadLine());
-            int c =indexOf(a,b);
-            Console.WriteLine($"Chi so cua phan tu {b} la: {c}");
-            //4. to remove a specific element from an array.
-            Console.Write("Nhap so can xoa: ");
-            int d = int.Parse(Console.ReadLine());
-            if (remove(a,ref n,d))
-            {
-                Console.Write("Mang moi la: ");
-                for (int i = 0; i < n; i++)
-                    Console.Write(a[i] + " ");
-            }  
-            else
-                Console.WriteLine("Khong co phan tu de xoa");
-            //5. to find the maximum and minimum value of an array.
-            Console.WriteLine($"So lon nhat trong mang la: {max(a)} \n" +
-                $"So be nhat trong mang la: {min(a)}");
+            ////1. to calculate the average value of array elements.
+            //double tb = avr(a);
+            //Console.WriteLine($"Trung binh cong cua cac so la: {tb}");
+            ////2. to test if an array contains a specific value.
+            //Console.Write("Nhap gia tri cu the: ");
+            //int t=int.Parse(Console.ReadLine());
+            //if (test(a, t))
+            //    Console.WriteLine($"Mang co chua gia tri {t}");
+            //else
+            //    Console.WriteLine($"Mang khong chua gia tri {t}");
+            ////3.to find the index of an array element.
+            //Console.Write("Nhap gia tri cu the: ");
+            //int b = int.Parse(Console.ReadLine());
+            //int c =indexOf(a,b);
+            //Console.WriteLine($"Chi so cua phan tu {b} la: {c}");
+            ////4. to remove a specific element from an array.
+            //Console.Write("Nhap so can xoa: ");
+            //int d = int.Parse(Console.ReadLine());
+            //if (remove(a,ref n,d))
+            //{
+            //    Console.Write("Mang moi la: ");
+            //    for (int i = 0; i < n; i++)
+            //        Console.Write(a[i] + " ");
+            //}  
+            //else
+            //    Console.WriteLine("Khong co phan tu de xoa");
+            ////5. to find the maximum and minimum value of an array.
+            //Console.WriteLine($"So lon nhat trong mang la: {max(a)} \n" +
+            //    $"So be nhat trong mang la: {min(a)}");
             //6.to reverse an array of integer values.
             Console.WriteLine($"Mang moi sau khi dao la: {string.Join(",", reverse(a))}");
-            //7..to find duplicate values in an array of values.
-            int[] z = { 1, 2, 3, 4, 5, 6, 4, 3, 2,12, 8, 15, 8, 12, 4 , 12 };
-            duplicate(z);
-            //8. to remove duplicate elements from an array.
-            Console.Write("Nhap so can xoa: ");
-            int h = int.Parse(Console.ReadLine());
-            int[] j = removedup(z,h);
-            Console.WriteLine($"Mang sau khi xoa la: {string.Join(", ",removedup(z,h))}");
-            //9. Requests 10 integers from the user and orders them by implementing the bubble sort algorithm.
-            Console.Write("Nhap so phan tu mang: ");
-            int soluong = int.Parse(Console.ReadLine());
-            int[] x = new int[soluong];
-            nhap_mang(x, soluong);
-            In_mang(x, soluong);
-            sapxep(x);
-            //10. Request a sentence from the user, then ask to enter a word. Search if the word appears in the phrase using the linear search algorithm.
-            Console.WriteLine("Nhap cau bat ki: ");
-            string cau = Console.ReadLine();
-            Console.WriteLine("Nhap tu bat ki: ");
-            string tu = Console.ReadLine();
-            if (TimKiemBangCachGomTu(cau, tu))
-            {
-                Console.WriteLine($"Co tu {tu} trong cau");
-            }    
-            else
-                Console.WriteLine($"Khong co tu {tu} trong cau");
+            ////7..to find duplicate values in an array of values.
+            //int[] z = { 1, 2, 3, 4, 5, 6, 4, 3, 2,12, 8, 15, 8, 12, 4 , 12 };
+            //duplicate(z);
+            ////8. to remove duplicate elements from an array.
+            //Console.Write("Nhap so can xoa: ");
+            //int h = int.Parse(Console.ReadLine());
+            //int[] j = removedup(z,h);
+            //Console.WriteLine($"Mang sau khi xoa la: {string.Join(", ",removedup(z,h))}");
+            ////9. Requests 10 integers from the user and orders them by implementing the bubble sort algorithm.
+            //Console.Write("Nhap so phan tu mang: ");
+            //int soluong = int.Parse(Console.ReadLine());
+            //int[] x = new int[soluong];
+            //nhap_mang(x, soluong);
+            //In_mang(x, soluong);
+            //sapxep(x);
+            ////10. Request a sentence from the user, then ask to enter a word. Search if the word appears in the phrase using the linear search algorithm.
+            //Console.WriteLine("Nhap cau bat ki: ");
+            //string cau = Console.ReadLine();
+            //Console.WriteLine("Nhap tu bat ki: ");
+            //string tu = Console.ReadLine();
+            //if (TimKiemBangCachGomTu(cau, tu))
+            //{
+            //    Console.WriteLine($"Co tu {tu} trong cau");
+            //}    
+            //else
+            //    Console.WriteLine($"Khong co tu {tu} trong cau");
         }
         //Bai1
         static double avr(int[] arr)
@@ -166,7 +166,13 @@ namespace CSLT_Excercises.session6
         //Bai6
         static int[] reverse(int[] arr)
         {
-            Array.Reverse(arr); 
+            int n=arr.Length;
+            for (int i = 0;i < n/2;i++)
+            {
+                int t=arr[i];
+                arr[i] = arr[n - i - 1];
+                arr[n - i - 1] = t;
+            }    
             return arr;
         }
         //Bai7.
