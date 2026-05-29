@@ -6,7 +6,7 @@
     <RootNamespace>CSLT_Excercises</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSLT_Excercises.session8.baitap_8</StartupObject>
+    <StartupObject>CSLT_Excercises.session7.baitap_7b</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

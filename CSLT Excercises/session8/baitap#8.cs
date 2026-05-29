@@ -12,53 +12,53 @@ namespace CSLT_Excercises.session8
             Console.WriteLine("Nhap chuoi: ");
             string s= Console.ReadLine();
             Console.WriteLine($"Chuoi moi nhap la: {s}");
-            //2. to find the length of a string without using a library function
-            Console.WriteLine($"Do dai cua chuoi la: {Demchuoi(s)}");
-            //3.to separate individual characters from a string.
-            Console.WriteLine("In ky tu chuoi: ");
-            sepa(s);
-            //4. to print individual characters of the string in reverse order.
-            Console.WriteLine();
-            Console.WriteLine("In nguoc ky tu chuoi");
-            nguoc(s);
-            //5. to count the total number of words in a string.
-            Console.WriteLine($"Tong so trong chuoi la: {Demso(s)}");
-            //6. to compare two strings without using a string library functions.
-            Console.WriteLine("Nhap chuoi thu 2: ");
-            string a= Console.ReadLine();
-            if (Chuoibangnhau(s, a)==0)
-                Console.WriteLine("2 chuoi nay bang nhau");
-            else if (Chuoibangnhau(s,a)==1)
-                Console.WriteLine("Chuoi thu nhat lon hon chuoi thu hai");
-            else if (Chuoibangnhau(s, a) == 2)
-                Console.WriteLine("Chuoi thu hai lon hon chuoi thu nhat");
-            //7. to count the number of alphabets, digits and special characters in a string.
-            Dem(s);
-            //8. to count the number of vowels or consonants in a string.
-            Demnguyenphu(s);
-            //9.to check whether a given substring is present in the given string.
-            Console.WriteLine("Nhap chuoi thu 2: ");
-            string z=Console.ReadLine();
-            if (Chuoicon(s, z))
-                Console.WriteLine("Chuoi con co trong chuoi da cho.");
-            else
-                Console.WriteLine("Chuoi con khong co trong chuoi da cho.");
-            //10. to search for the position of a substring within a string.
-            Console.WriteLine("Nhap chuoi thu 2: ");
-            string x = Console.ReadLine();
-            Index(s, x);
-            //11.To check whether a character is an alphabet and not and if so, check for the case.
-            Console.Write("Nhap ky tu: ");
-            char c = Console.ReadKey().KeyChar;
-            Console.WriteLine();
-            Chucai(c);
-            //12.to find the number of times a substring appears in a given string.
-            Console.WriteLine("Nhap chuoi con: ");
-            string m = Console.ReadLine();
-            if (Xuathien(s, m) == 0)
-                Console.WriteLine("Chuoi con khong xuat hien trong chuoi da cho.");
-            else
-                Console.WriteLine($"Chuoi con xuat hien {Xuathien(s,m)} lan ");
+            ////2. to find the length of a string without using a library function
+            //Console.WriteLine($"Do dai cua chuoi la: {Demchuoi(s)}");
+            ////3.to separate individual characters from a string.
+            //Console.WriteLine("In ky tu chuoi: ");
+            //sepa(s);
+            ////4. to print individual characters of the string in reverse order.
+            //Console.WriteLine();
+            //Console.WriteLine("In nguoc ky tu chuoi");
+            //nguoc(s);
+            ////5. to count the total number of words in a string.
+            //Console.WriteLine($"Tong so trong chuoi la: {Demso(s)}");
+            ////6. to compare two strings without using a string library functions.
+            //Console.WriteLine("Nhap chuoi thu 2: ");
+            //string a= Console.ReadLine();
+            //if (Chuoibangnhau(s, a)==0)
+            //    Console.WriteLine("2 chuoi nay bang nhau");
+            //else if (Chuoibangnhau(s,a)==1)
+            //    Console.WriteLine("Chuoi thu nhat lon hon chuoi thu hai");
+            //else if (Chuoibangnhau(s, a) == 2)
+            //    Console.WriteLine("Chuoi thu hai lon hon chuoi thu nhat");
+            ////7. to count the number of alphabets, digits and special characters in a string.
+            //Dem(s);
+            ////8. to count the number of vowels or consonants in a string.
+            //Demnguyenphu(s);
+            ////9.to check whether a given substring is present in the given string.
+            //Console.WriteLine("Nhap chuoi thu 2: ");
+            //string z=Console.ReadLine();
+            //if (Chuoicon(s, z))
+            //    Console.WriteLine("Chuoi con co trong chuoi da cho.");
+            //else
+            //    Console.WriteLine("Chuoi con khong co trong chuoi da cho.");
+            ////10. to search for the position of a substring within a string.
+            //Console.WriteLine("Nhap chuoi thu 2: ");
+            //string x = Console.ReadLine();
+            //Index(s, x);
+            ////11.To check whether a character is an alphabet and not and if so, check for the case.
+            //Console.Write("Nhap ky tu: ");
+            //char c = Console.ReadKey().KeyChar;
+            //Console.WriteLine();
+            //Chucai(c);
+            ////12.to find the number of times a substring appears in a given string.
+            //Console.WriteLine("Nhap chuoi con: ");
+            //string m = Console.ReadLine();
+            //if (Xuathien(s, m) == 0)
+            //    Console.WriteLine("Chuoi con khong xuat hien trong chuoi da cho.");
+            //else
+            //    Console.WriteLine($"Chuoi con xuat hien {Xuathien(s,m)} lan ");
             //13.
             Console.WriteLine("Nhap chuoi con: ");
             string n = Console.ReadLine();
