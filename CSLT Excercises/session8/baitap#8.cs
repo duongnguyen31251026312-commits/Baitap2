@@ -164,7 +164,7 @@ namespace CSLT_Excercises.session8
                     chucai++;
                 else if ((c >= '0' && c <= '9'))
                     so++;
-                else if (c !=' ')
+                else
                     kytu++;
             }
             Console.WriteLine($"So luong chu cai trong chuoi la: {chucai}");
