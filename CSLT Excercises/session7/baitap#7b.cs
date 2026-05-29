@@ -28,30 +28,30 @@ namespace CSLT_Excercises.session7
             int[] a = new int[n];
             Nhapmang(a, n);
             Inmang(a, n);
-            //Bai 2. Tính tổng và trung bình cộng
-            //Console.WriteLine($"Tổng của các phần tử trong mảng là: {Tong(a)}");
-            //Console.WriteLine($"Trung bình cộng của các phần tử trong mảng là: {TBC(a):f2}");
-            //Bai 3. Tìm số lớn nhất và nhỏ nhất
-            //Console.WriteLine($"Số lớn nhất trong mảng là: {Max(a)}");
-            //Console.WriteLine($"Số bé nhất trong mảng là: {Min(a)}");
-            //Bai 4. Đếm số chẵn lẻ
-            //Console.WriteLine($"Số chẵn trong mảng là: {Demso(a)}");
-            //Console.WriteLine($"Số lẻ trong mảng là: {a.Length-Demso(a)}");
-            //Bai 5. Tìm kiếm 1 số trong mảng
-            //Console.WriteLine("Nhập số cần tìm: ");
-            //int b=int.Parse(Console.ReadLine());
-            //Console.WriteLine($"Vị trí tìm thấy số {b} trong mảng là: {Checkso(a, b)}");
-            //Bai 6. Đảo ngược mảng 
-            //Daonguoc(a);
-            //Bai 7. Kiểm tra mảng đối xứng
-            //if (Doixung(a))
-            //    Console.WriteLine("YES");
-            //else Console.WriteLine("NO");
-            //Bai 8. Liệt kê các số nguyên tố trong mảng
-            //Console.WriteLine("Các số nguyên tố trong mảng là: ");
-            //Innguyento(a);
-            //Bai 9. Tách mảng Chẵn - Lẻ
-            //Tachmang(a);
+            //Bai 2.Tính tổng và trung bình cộng
+            Console.WriteLine($"Tổng của các phần tử trong mảng là: {Tong(a)}");
+            Console.WriteLine($"Trung bình cộng của các phần tử trong mảng là: {TBC(a):f2}");
+            //Bai 3.Tìm số lớn nhất và nhỏ nhất
+            Console.WriteLine($"Số lớn nhất trong mảng là: {Max(a)}");
+            Console.WriteLine($"Số bé nhất trong mảng là: {Min(a)}");
+            //Bai 4.Đếm số chẵn lẻ
+            Console.WriteLine($"Số chẵn trong mảng là: {Demso(a)}");
+            Console.WriteLine($"Số lẻ trong mảng là: {a.Length - Demso(a)}");
+            //Bai 5.Tìm kiếm 1 số trong mảng
+            Console.WriteLine("Nhập số cần tìm: ");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Vị trí tìm thấy số {b} trong mảng là: {Checkso(a, b)}");
+            //Bai 6.Đảo ngược mảng
+            Daonguoc(a);
+            //Bai 7.Kiểm tra mảng đối xứng
+            if (Doixung(a))
+                Console.WriteLine("YES");
+            else Console.WriteLine("NO");
+            //Bai 8.Liệt kê các số nguyên tố trong mảng
+            Console.WriteLine("Các số nguyên tố trong mảng là: ");
+            Innguyento(a);
+            //Bai 9.Tách mảng Chẵn -Lẻ
+            Tachmang(a);
             //Bai 10. Sắp xếp mảng tăng dần và giảm dần
             Console.WriteLine("Mảng sắp xếp tăng dần là: ");
             Noibot(a);
