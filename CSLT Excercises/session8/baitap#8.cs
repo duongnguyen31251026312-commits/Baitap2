@@ -176,7 +176,7 @@ namespace CSLT_Excercises.session8
         {
             int nguyen = 0;
             int phu = 0;
-            string nguyenam = "aeyouAEYOU";
+            string nguyenam = "aeiouAEIOU";
             foreach (char c in s)
             {
                 if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
