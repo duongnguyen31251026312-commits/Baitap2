@@ -234,7 +234,7 @@
         {
             double c = 1;
             if (b == 0)
-                return c;
+                return 1;
             else
             {
                 for (int i = 0; i < b; i++)
